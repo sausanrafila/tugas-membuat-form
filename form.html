@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>student registation form</h1>
+    <form action="proses.php" mrthode="post">
+        <fieldset style="background-color:khaki;">
+            <legend><h2>isian biodata</h2></legend>
+                <br>
+                <label>masukkan nama</label>
+                <br />
+                <label>first name</label>
+                <input type="text" nama="nama" value="" sixe="40" />
+                <label>last name</label>
+                <input type="text" nama="nama" value="" size="40" />
+                <br>
+                <label for="start_date">birth date</label>
+                <input type="date" name="start_date" id="start_date" value="2013-12-01">
+                <br />
+                <br>
+                <label>jenis kelamin</label>
+                    <input type="radio" name="jk" value="L" checked />laki laki
+                    <input type="radio" name="jk" value="p" />perempuan
+                <br />
+                <br>
+                <label>Alamat</label>
+                <br />
+                <br>
+                <label>nama jalan</label>
+                <textarea name="alamat_kirim" cols="30" rows="1"></textarea>
+                <br />
+                <label>kota</label>
+                <select name="nama kota">
+                    <option value="">--pilih--</option>
+                    <option value="jakarta selatan">jakarta selatan</option>
+                    <option value="jakarta barat">jakarta barat</option>
+                    <option value="jakarta timur">jakarta timur</option>
+                    <option value="jakarta pusat">jakarta pusat</option>
+                </select>
+                <br>
+                <label for="email">email</label>
+                <input id="email" type="email" name="email" placheholder="user@example.com">
+                <br />
+                <br>
+                <label for="password">pasword</label>
+                <input id="password" type="password" name="password" value="" autocomplete="off"
+                 placeholder="8-10 character" pattern=".{8,}" title="eight or more character">
+                 <br />
+                 <br>
+                <label for="password">ulangi pasword</label>
+                <input id="password" type="password" name="password" value="" autocomplete="off"
+                 placeholder="8-10 character" pattern=".{8,}" title="eight or more character">
+                 <br />
+                 <input type="submit" value="simpan" name="proses">
+
+
+
+
+
+
+                </fieldset>
+    </form>
+</body>
+</html>
