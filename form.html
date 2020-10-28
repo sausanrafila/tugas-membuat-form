@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +7,32 @@
 </head>
 <body>
     <h1>student registation form</h1>
-    <form action="proses.php" mrthode="post">
+    <form action="proses.php" method="post">
         <fieldset style="background-color:khaki;">
             <legend><h2>isian biodata</h2></legend>
-                <br>
+                <div>
                 <label>masukkan nama</label>
-                <br />
+                </div>
                 <label>first name</label>
-                <input type="text" nama="nama" value="" sixe="40" />
+                <input type="text" name="nama" value="" size="40" />
                 <label>last name</label>
-                <input type="text" nama="nama" value="" size="40" />
-                <br>
+                <input type="text" name="nama" value="" size="40" />
+                <div>
                 <label for="start_date">birth date</label>
                 <input type="date" name="start_date" id="start_date" value="2013-12-01">
-                <br />
-                <br>
+                </div>
+                <div>
                 <label>jenis kelamin</label>
                     <input type="radio" name="jk" value="L" checked />laki laki
                     <input type="radio" name="jk" value="p" />perempuan
-                <br />
-                <br>
+                </div>
+                <div>
                 <label>Alamat</label>
-                <br />
-                <br>
+                </div>
+                <div>
                 <label>nama jalan</label>
                 <textarea name="alamat_kirim" cols="30" rows="1"></textarea>
-                <br />
+                </div>
                 <label>kota</label>
                 <select name="nama kota">
                     <option value="">--pilih--</option>
@@ -41,20 +41,14 @@
                     <option value="jakarta timur">jakarta timur</option>
                     <option value="jakarta pusat">jakarta pusat</option>
                 </select>
-                <br>
+                <div>
                 <label for="email">email</label>
-                <input id="email" type="email" name="email" placheholder="user@example.com">
-                <br />
-                <br>
-                <label for="password">pasword</label>
-                <input id="password" type="password" name="password" value="" autocomplete="off"
-                 placeholder="8-10 character" pattern=".{8,}" title="eight or more character">
-                 <br />
-                 <br>
-                <label for="password">ulangi pasword</label>
-                <input id="password" type="password" name="password" value="" autocomplete="off"
-                 placeholder="8-10 character" pattern=".{8,}" title="eight or more character">
-                 <br />
+                <input type="email" id="email" name="email" placeholder="user@example.com">
+                </div>
+                <div>
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                </div>
                  <input type="submit" value="simpan" name="proses">
 
 
